@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Prodigy Infotech Task-05</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌦 Weather App</h1>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name">
+
+                <button id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+
+            </div>
+
+            <button id="locationBtn">
+                <i class="fa-solid fa-location-dot"></i>
+                Use Current Location
+            </button>
+
+            <div class="loading" id="loading">
+                Loading...
+            </div>
+
+            <div class="weather" id="weather">
+
+                <h2 id="city">City</h2>
+
+                <img
+                    id="icon"
+                    src=""
+                    alt="Weather Icon">
+
+                <h1 id="temp">0°C</h1>
+
+                <h3 id="condition">Condition</h3>
+
+                <div class="details">
+
+                    <div class="box">
+                        <i class="fas fa-temperature-high"></i>
+                        <p>Feels Like</p>
+                        <span id="feelsLike">0°C</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-tint"></i>
+                        <p>Humidity</p>
+                        <span id="humidity">0%</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-wind"></i>
+                        <p>Wind</p>
+                        <span id="wind">0 km/h</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-gauge-high"></i>
+                        <p>Pressure</p>
+                        <span id="pressure">0 hPa</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
